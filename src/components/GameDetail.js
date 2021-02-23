@@ -19,7 +19,7 @@ import starFull from "../img/star-full.png";
 
 const GameDetail = ({ pathId }) => {
   const history = useHistory();
-  
+
   //Exit Detail
   const exitDetailHander = (e) => {
     const element = e.target;
@@ -62,11 +62,9 @@ const GameDetail = ({ pathId }) => {
 
   //Data
   const { screen, game, isLoading } = useSelector((state) => state.detail);
-  
   return (
     <>
       {!isLoading && (
-      
         <CardShadow className="shadow" onClick={exitDetailHander}>
           <Detail layoutId={pathId}>
             <Stats>
